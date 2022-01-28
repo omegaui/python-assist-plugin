@@ -1,4 +1,6 @@
 package omega.instant.support.python.assist;
+import omega.io.IconManager;
+
 import java.net.URL;
 
 import omega.instant.support.ContentTokenizers;
@@ -28,7 +30,7 @@ public class PythonAssistPlugin implements Plugin{
 	@Override
 	public URL getImage() {
 		try{
-			return getClass().getResource("/fluent-icons/icons8-python-48.png");
+			return IconManager.class.getResource("/fluent-icons/icons8-python-48.png");
 		}
 		catch(Exception e){
 			e.printStackTrace();
